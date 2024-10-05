@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <style>
+    /* Basic Styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header Styling */
+    .header {
+      background-color: #240750;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Main Content Styling */
+    .main-content {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .main-content h1 {
+      color: #240750;
+      margin-bottom: 20px;
+    }
+
+    .main-content p {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+    }
+
+    /* Image Styling */
+    .about-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    /* Footer Styling */
+    .footer {
+      background-color: lightslategray;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      
+      overflow: hidden;
+      animation: fadeInUp 1s ease-in-out; 
+    }
+
+    .footer-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .footer-content p {
+      margin: 5px 0;
+    }
+
+    /* Animation for Links */
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: transform 0.3s ease; 
+    }
+
+    .footer a:hover {
+      transform: scale(1.1);
+      color: #f1c40f; 
+    }
+
+    /* Fade In Up Animation */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Animated Footer Text */
+    .footer-animation {
+      display: inline-block;
+      animation: slideUp 3s infinite ease-in-out;
+    }
+
+    @keyframes slideUp {
+      0% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      50% {
+        transform: translateY(-10px);
+        opacity: 0.7;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .main-content {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Include Header -->
+  <%- include('partials/header') %>
+
+  <!-- Main Content Section -->
+  <div class="main-content">
+    <h1>About Us</h1>
+    <p>Welcome to [Your Website Name]! We are committed to delivering a seamless user experience with dynamic content and personalized services.</p>
+
+    <!-- Team Image -->
+    <h2>Meet the Team</h2>
+    <img src="https://img.freepik.com/free-vector/teamwork-concept-landing-page_23-2148191420.jpg?t=st=1727582497~exp=1727586097~hmac=c304964227609ec5f50fdfe733552ba98abfae30b9d5fb950c7900e77b8f8a69&w=826" />
+    <p>Our dedicated team of professionals works tirelessly to bring you the best experience. Get to know the faces behind the brand.</p>
+
+    <!-- Service Image -->
+    <h2>Our Services</h2>
+    <img src="https://img.freepik.com/premium-photo/certification-standards-iso-business-certification-international-standards_1101054-55001.jpg?w=996" alt="Our Services" class="about-image" />
+    <p>We offer a wide range of products and services tailored to meet the needs of our diverse clientele. From product A to service B, we've got you covered.</p>
+
+    <h4>Technology Stack</h4>
+    <img src="https://img.freepik.com/free-vector/server-room-cloud-data-cloud-storage-big-data-processing-concept-networking-internet_39422-625.jpg?t=st=1727553375~exp=1727556975~hmac=90597973d937ca26d04d8c1c2ba920a441cafd2b7f2159718c2d9e840de133cf&w=1060" alt="">
+    <p>We use cutting-edge technology, including Node.js, MongoDB, and React, to ensure a smooth, efficient, and secure user experience.</p>
+
+    <h4>User Guidance</h4>
+    <img src="https://img.freepik.com/premium-photo/attracting-retaining-customers-with-your-calling-card_1106493-462852.jpg?w=740" alt="">
+    <p>Explore our website to learn more about what we offer. If you have any questions, feel free to reach out through our contact page.</p>
+  </div>
+
+  <!-- Animated Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2024 [Your Website Name]. All Rights Reserved.</p>
+      
+    </div>
+  </footer>
+</body>
+</html>
